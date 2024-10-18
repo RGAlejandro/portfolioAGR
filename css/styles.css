@@ -1,0 +1,216 @@
+/* Fuente personalizada */
+@font-face {
+    font-family: 'W95FA';
+    src: url('assets/fonts/w95fa/W95FA/W95FA.otf') format('opentype');
+}
+
+/* Fondo del escritorio */
+body {
+    margin: 0;
+    font-family: 'W95FA', Tahoma, sans-serif; /* Usamos la nueva fuente W95FA */
+    background-color: #337f7f;
+    cursor: pointer;
+}
+
+.desktop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Iconos del escritorio */
+.desktop-icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#icon-showcase {
+    top: 20px;
+    left: 20px;
+}
+
+#icon-projects {
+    top: 90px;
+    left: 20px;
+}
+
+.desktop-icon img {
+    margin-bottom: 5px;
+}
+
+.desktop-icon span {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Ventanas */
+.window {
+    width: 500px;
+    height: 350px;
+    background-color: #C0C0C0;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    box-shadow: 2px 2px 0px #000000;
+    display: none;
+}
+
+/* Modificación del tamaño de la barra superior */
+.window-header {
+    background-color: #000080;
+    color: white;
+    padding: 2px 5px;  /* Reducimos el padding para hacer la barra más pequeña */
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    height: 20px; /* Reducimos la altura de la barra */
+}
+
+.window-header img {
+    margin-right: 5px;
+    width: 16px; /* Ajustamos el tamaño del ícono para que sea más pequeño */
+    height: 16px;
+}
+
+/* Alinear el texto del título a la derecha del ícono */
+.window-header span {
+    margin-left: 5px;
+    font-family: 'W95FA', Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/* Controles de la ventana */
+.window-controls {
+    margin-left: auto;
+}
+
+.window-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.window-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    margin: 10px 0;
+    color: #000080;
+    font-family: 'W95FA', Tahoma, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de tareas */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+    height: 30px;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #000000;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.start-btn {
+    background-color: #C0C0C0;
+    border: 1px solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: black;
+    border-right-color: black;
+    padding: 2px 10px;
+    font-family: 'W95FA', Tahoma, sans-serif;
+    font-size: 8px;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.start-btn img {
+    margin-right: 5px;
+}
+
+.taskbar-windows {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px; /* Ajuste para que empiece después de "Start" */
+}
+
+.taskbar-windows .minimized-window {
+    background-color: #C0C0C0;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.taskbar-windows img {
+    margin-right: 5px;
+}
+
+/* Menú de inicio */
+.start-menu {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    background-color: #C0C0C0;
+    border: 2px solid black;
+    width: 200px;
+    display: none;
+}
+
+.start-menu-header {
+    background-color: #000080;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'W95FA', Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.start-menu-header img {
+    margin-right: 5px;
+}
+
+.start-menu-options {
+    padding: 10px;
+}
+
+.start-menu-options p {
+    font-family: 'W95FA', Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.start-menu-options p:hover {
+    background-color: #000080;
+    color: white;
+    padding: 2px 5px;
+}
+

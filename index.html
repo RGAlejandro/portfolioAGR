@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Windows 95 Theme</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/icons/win95-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="desktop">
+        <!-- Iconos del escritorio -->
+        <div class="desktop-icon" id="icon-showcase">
+            <img src="assets/icons/w95icon.svg" width="32px" height="32px" alt="Icon">
+            <span>My Showcase</span>
+        </div>
+        <div class="desktop-icon" id="icon-projects">
+            <img src="assets/icons/w95icon.svg" width="32px" height="32px" alt="Icon">
+            <span>Projects</span>
+        </div>
+
+        <!-- Ventana de ejemplo -->
+        <div class="window" id="main-window">
+            <div class="window-header" id="window-header">
+                <img src="assets/icons/w95icon.svg" width="16px" height="16px" alt="Window Icon">
+                <span>My Showcase</span>
+                <div class="window-controls">
+                    <button class="minimize-btn">_</button>
+                    <button class="maximize-btn">[]</button>
+                    <button class="close-btn">X</button>
+                </div>
+            </div>
+            <div class="window-body">
+                <h1 style="font-family: Tahoma, sans-serif;">Alejandro Gemes</h1>
+                <h3>Software Developer</h3>
+                <div class="links">
+                    <a href="#about">ABOUT</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#projects">PROJECTS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú de inicio -->
+    <div class="start-menu" id="start-menu">
+        <div class="start-menu-header">
+            <img src="assets/icons/win95icon.svg" alt="Start Icon" width="20px">
+            <span>Start</span>
+        </div>
+        <div class="start-menu-options">
+            <p>Programs</p>
+            <p>Documents</p>
+            <p>Settings</p>
+            <p>Find</p>
+            <p>Help</p>
+            <p>Shut Down</p>
+        </div>
+    </div>
+
+    <!-- Footer: Barra de tareas con botón de inicio -->
+    <footer class="taskbar">
+        <button class="start-btn">
+            <img src="assets/icons/w95icon.svg" width="20px" height="20px" alt="Icon">
+            Start
+        </button>
+        <div class="taskbar-windows" id="taskbar-windows">
+            <!-- Aquí se mostrarán las ventanas minimizadas -->
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
